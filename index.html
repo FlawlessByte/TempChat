@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
+</head>
+<body>
+
+
+
+<div class="container">
+  <div class="jumbotron bg-dark" style="color:#fff">
+  <h1 class="display-3" style="font-family:'Pacifico', cursive;">Talk.io</h1> <hr>
+  <h2>This is a simple temporary chat room, that is available in a click. The chats will be deleted after a certain amount of time.</h2>
+  
+
+</div>
+
+<div class="card border-dark mb-3 w-100">
+  <!--<div class="card-header">Header</div>-->
+  <div class="card-body text-dark">
+    <h5 class="card-title">Dark card title</h5>
+    
+	<table class="table table-borderless">
+	  <tbody>
+		<tr>
+		  <td>
+			<div class="rounded" style="padding:50px; border: 2px solid black">
+				<img src="enter.png"/>
+				<br><hr><br>
+				<span class="d-block">
+					<button id="enterChatButton" type="button" class="btn btn-outline-dark btn-lg" data-target="#enterChatModal" data-toggle="modal">Enter Chat Room</button>
+
+
+				</span>
+			</div>
+			</td>
+		  <td>
+			<div class="rounded" style="padding:50px; border: 2px solid black">
+				<img src="chat.png"/>
+				<br><hr><br>
+				<span class="d-block">
+					<button type="button" class="btn btn-outline-dark btn-lg" data-target="#createChatModal" data-toggle="modal">Create Chat Room</button>
+				</span>
+			</div>
+			</td>
+		</tr>
+	  </tbody>
+	</table>
+	</div>
+</div>
+
+
+</div>
+
+
+<!-- Modal enterCHatBox-->
+					<div class="modal fade" id="enterChatModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+						  <div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+						  </div>
+						  <div class="modal-body">
+							<form>
+							  <div class="form-group">
+								<label for="exampleInputEmail1">Chat Room ID</label>
+								<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter chat room ID">
+								<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+							  </div>
+							  <div class="form-group">
+								<label for="exampleInputPassword1">Alias</label>
+								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Type your name">
+							  </div>
+							</form>
+					
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button id="enterButton" type="button" class="btn btn-primary">Enter</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+
+<!-- Modal CreateCHatBox-->
+					<div class="modal fade" id="createChatModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+						  <div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Create</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+						  </div>
+						  <div class="modal-body">
+							<form>
+							  <div class="form-group">
+								<label for="exampleInputEmail1">Enter a Chat Room ID</label>
+								<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter chat room ID">
+								<br>
+								<div id="alertChatExists" style="display:none" class="alert alert-danger" role="alert">
+								  Chat room already exists!
+								</div>
+							  </div>
+							</form>
+					
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button id="buttonCreate" type="button" class="btn btn-primary">Create</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+
+
+
+<!-- Bootstrap js -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
